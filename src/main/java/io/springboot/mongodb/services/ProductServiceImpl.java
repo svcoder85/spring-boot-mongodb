@@ -1,18 +1,15 @@
-package guru.springframework.services;
+package io.springboot.mongodb.services;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.converters.ProductFormToProduct;
-import guru.springframework.domain.Product;
-import guru.springframework.repositories.ProductRepository;
+import io.springboot.mongodb.commands.ProductForm;
+import io.springboot.mongodb.converters.ProductFormToProduct;
+import io.springboot.mongodb.domain.Product;
+import io.springboot.mongodb.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by jt on 1/10/17.
- */
 @Service
 public class ProductServiceImpl implements ProductService {
 

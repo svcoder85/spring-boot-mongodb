@@ -1,10 +1,7 @@
-package guru.springframework.repositories;
+package io.springboot.mongodb.repositories;
 
-import guru.springframework.domain.Product;
+import io.springboot.mongodb.domain.Product;
 import org.springframework.data.repository.CrudRepository;
 
-/**
- * Created by jt on 1/10/17.
- */
 public interface ProductRepository extends CrudRepository<Product, String> {
 }

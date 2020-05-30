@@ -1,13 +1,10 @@
-package guru.springframework.services;
+package io.springboot.mongodb.services;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.domain.Product;
+import io.springboot.mongodb.commands.ProductForm;
+import io.springboot.mongodb.domain.Product;
 
 import java.util.List;
 
-/**
- * Created by jt on 1/10/17.
- */
 public interface ProductService {
 
     List<Product> listAll();

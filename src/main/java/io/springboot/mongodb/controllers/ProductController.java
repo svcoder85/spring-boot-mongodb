@@ -1,9 +1,9 @@
-package guru.springframework.controllers;
+package io.springboot.mongodb.controllers;
 
-import guru.springframework.commands.ProductForm;
-import guru.springframework.converters.ProductToProductForm;
-import guru.springframework.domain.Product;
-import guru.springframework.services.ProductService;
+import io.springboot.mongodb.commands.ProductForm;
+import io.springboot.mongodb.converters.ProductToProductForm;
+import io.springboot.mongodb.domain.Product;
+import io.springboot.mongodb.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,11 +14,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.validation.Valid;
 
-/**
- * Created by jt on 1/10/17.
- */
 @Controller
 public class ProductController {
+
     private ProductService productService;
 
     private ProductToProductForm productToProductForm;
