@@ -1,7 +1,9 @@
 package io.springboot.mongodb.repositories;
 
 import io.springboot.mongodb.domain.Product;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface ProductRepository extends CrudRepository<Product, String> {
+@Repository
+public interface ProductRepository extends MongoRepository<Product, String> {
 }
